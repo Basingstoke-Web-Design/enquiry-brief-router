@@ -6,6 +6,10 @@ The reference does not send messages or store enquiries. Sending and storage nee
 
 ![Complete example](docs/preview.png)
 
+## Live demo
+
+[Try Enquiry Brief Router](https://basingstoke-web-design.github.io/enquiry-brief-router/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+
 ## Start locally
 
 Requires Node.js 22 or later. No runtime dependencies or account required.
