@@ -1,7 +1,7 @@
 {
   "name": "enquiry-brief-router",
-  "version": "0.1.0",
-  "description": "Build a short service enquiry flow that asks relevant questions and prepares a reviewable email brief.",
+  "version": "0.2.0",
+  "description": "Work out what your website needs to ask, what can wait and how your team will respond.",
   "type": "module",
   "private": false,
   "license": "MIT",

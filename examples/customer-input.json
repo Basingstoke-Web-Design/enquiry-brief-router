@@ -1,0 +1,13 @@
+{
+  "business": "Commercial cleaning company",
+  "goal": "A quote",
+  "facts": [
+    "Service needed",
+    "General area or postcode",
+    "Approximate scope"
+  ],
+  "reply": "choice",
+  "later": "Photographs\nDetailed site information",
+  "owner": "Office team",
+  "response": "During the next working day, subject to opening hours."
+}

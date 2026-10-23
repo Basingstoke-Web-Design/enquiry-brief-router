@@ -3,9 +3,10 @@
   "org": "Basingstoke-Web-Design",
   "brand": "Basingstoke Web Design",
   "slug": "enquiry-brief-router",
-  "title": "Enquiry Brief Router",
+  "title": "Website Enquiry Form Planner",
   "profile": "Small-business websites planned around clear, relevant enquiries. Operated by JW Digital Services Ltd.",
-  "accent": "#3d3881",
-  "tint": "#eeecfa",
-  "summary": "Build a short service enquiry flow that asks relevant questions and prepares a reviewable email brief."
+  "accent": "#f25330",
+  "tint": "#e7f1f5",
+  "summary": "Work out what your website needs to ask, what can wait and how your team will respond.",
+  "brandMark": "<svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2 40 20 4l20 36H26L20 27l-6 13Z\" fill=\"currentColor\" stroke=\"none\"/></svg>"
 }

@@ -1,0 +1,25 @@
+Commercial cleaning company: enquiry form plan
+
+Keep the first step short enough to complete on a phone.
+
+The form’s job
+- A quote
+
+Suggested initial fields
+- Name
+- Preferred reply method, then the email address or phone number the customer chooses
+- Service needed
+- General area or postcode
+- Approximate scope
+- Short description of what help is needed
+
+Ask later
+- Photographs
+- Detailed site information
+
+After someone sends the form
+- Responsible team: Office team
+- Confirmed response arrangement: During the next working day, subject to opening hours.
+- Show a clear confirmation explaining what happens next.
+- Make required fields obvious, explain errors and test successful delivery to the team.
+- Provide a suitable privacy notice and decide what the business will retain.

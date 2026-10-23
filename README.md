@@ -1,60 +1,49 @@
-# Enquiry Brief Router
+# Website Enquiry Form Planner
 
-Enquiry Brief Router helps a small service business ask a few relevant questions before a customer gets in touch. The customer can review the answers, copy a brief or open an email draft.
+Work out what your website needs to ask, what can wait and how your team will respond.
 
-The reference does not send messages or store enquiries. Sending and storage need a separately configured service. Maintained by [Basingstoke Web Design](https://basingstokewebdesign.uk/), operated by JW Digital Services Ltd.
+**For Basingstoke small businesses. No coding knowledge needed.**
 
-![Complete example](docs/preview.png)
+[Open the free tool](https://basingstoke-web-design.github.io/enquiry-brief-router/) · [See a fictional worked example](https://basingstoke-web-design.github.io/enquiry-brief-router/examples/customer-output.html)
 
-## Live demo
+![Desktop preview](docs/preview.png)
 
-[Try Enquiry Brief Router](https://basingstoke-web-design.github.io/enquiry-brief-router/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+## How to use it
 
-## Start locally
+1. Open the tool in your browser. No installation or account is needed.
+2. Use your own business details in the labelled fields, or choose **Try a fictional example**.
+3. Choose **Plan my enquiry form** and review the result.
+4. Adjust your answers, then copy the result, download a text file or choose **Print / Save PDF**.
 
-Requires Node.js 22 or later. No runtime dependencies or account required.
+A short form specification and a response plan to share with your designer.
+
+## What to expect
+
+Plan the form your customers will use. You are not submitting a real enquiry here, so do not enter customer information.
+
+This plans fields and follow-up. It does not build, send or store a working enquiry form.
+
+Your answers are processed in the browser tab. They are not uploaded, emailed or saved by the tool. Refreshing or closing the tab clears them. Save your result before leaving. GitHub provides hosting and handles normal request logs. Example details are fictional, not customer results.
+
+## Design and maintenance
+
+The interface uses the colours, typography and visual treatment of [Basingstoke Web Design](https://basingstokewebdesign.uk/). The tool is maintained by Basingstoke Web Design, operated by JW Digital Services Ltd. The commercial website is a separate project.
+
+## For developers
+
+The customer tool uses native HTML controls and small browser modules, with no runtime framework. Its planning or calculation rules are in `src/customer.js`; presentation helpers are in `src/customer-ui.js`.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm test
 npm run build
 npm run serve
 ```
 
-Open http://127.0.0.1:4173/ for the complete local demonstration. Browser examples do not upload or persist entered data. The optional development server binds to loopback only.
+Open the local address printed by the server. `npm run build:pages` prepares the static GitHub Pages artifact. Tests cover the customer rules and output escaping.
 
-## Input and output
+The original v0.1 developer helpers remain in `src/index.js` for compatibility, with their original examples. They are not needed to use the customer tool. The existing repository name and Pages URL are retained so earlier links keep working.
 
-Supply business, selectedService, routes [{id,label,questions:[{id,label,required}]}] and answers (object). Only answers for the active route enter the brief. There is no preconfigured recipient, submission endpoint or storage.
+## Licence and feedback
 
-Use [examples/input.json](examples/input.json) as the complete input contract. Compare the generated [JSON result](examples/output.json), [Markdown report](examples/output.md) and [complete HTML](examples/output.html). The demo is in [demo/index.html](demo/index.html). It needs the local server for JavaScript modules. HTML reports can be opened as standalone files.
-
-```sh
-node cli.mjs examples/input.json --format json
-node cli.mjs examples/input.json --format html --output report.html
-node cli.mjs examples/input.json --format md --output report.md
-```
-
-This resource uses nested JSON input. See the complete example and `node cli.mjs --help`.
-
-## Worked example
-
-Use a fictional local sign-making business with branches for a shop sign, vehicle lettering and an update to existing artwork. A vehicle enquiry asks how many vehicles; a shop-sign enquiry asks where it will be installed. Switching branches clears inactive answers from the final brief rather than leaking earlier information into it.
-
-All supplied example records are synthetic. No clients, outcomes, current professional advice or real service availability are represented by them. Keep real records private and review output before sharing it.
-
-## Checks
-
-- Each branch shows and validates only its active questions. Switching branches removes inactive data from every output.
-- Back navigation preserves valid active answers. Required questions have clear errors and focus moves usefully to them.
-- Email bodies are encoded correctly, including ampersands, apostrophes and line breaks. Overlong drafts offer a copy fallback.
-- Screen-reader labels, keyboard operation, 320 px layout and JavaScript-disabled behaviour are checked.
-- Inspect the network log and browser storage to confirm no enquiry data is transmitted or retained by the demo. No actual message is sent in tests.
-
-The automated results and browser checks performed for this release are recorded in [verification.md](docs/verification.md). Manual screen-reader testing has not been performed. A passing automated check is not accessibility certification.
-
-## Contribute and maintain
-
-Use [Issues](https://github.com/Basingstoke-Web-Design/enquiry-brief-router/issues) for a reproducible bug and [Discussions](https://github.com/Basingstoke-Web-Design/enquiry-brief-router/discussions) for questions and improvements. Follow [CONTRIBUTING.md](CONTRIBUTING.md); report vulnerabilities privately using [SECURITY.md](SECURITY.md). See [CHANGELOG.md](CHANGELOG.md) for releases. Maintenance is best effort.
-
-Code, original illustrations and synthetic fixtures are MIT licensed. There is no required website backlink when reusing the resource. Commercial brand assets and third-party material are not included.
+MIT for tool code. Bundled typefaces retain their original licence notices in `demo/assets/font-licences`. [Ideas and feedback](https://github.com/Basingstoke-Web-Design/enquiry-brief-router/discussions/1).

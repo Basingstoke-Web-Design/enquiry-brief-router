@@ -1,3 +1,11 @@
-Try the sign-making example and switch between the three enquiry types. Tell us where a question feels unnecessary or where the brief lacks an essential detail. Please use fictional requests and avoid posting customer information. This project is maintained by [Basingstoke Web Design](https://basingstokewebdesign.uk/). Bugs belong in Issues; question-flow suggestions belong here.
+# Try Website Enquiry Form Planner and share what would make it more useful
 
-See the [README](../README.md) for setup, the complete example and release checks.
+This free browser tool is for basingstoke small businesses. Work out what your website needs to ask, what can wait and how your team will respond.
+
+[Open the tool](https://basingstoke-web-design.github.io/enquiry-brief-router/). No coding knowledge, installation or account is needed. Start with the fictional example, or fill in the labelled fields with your own information. A short form specification and a response plan to share with your designer.
+
+Feedback about unclear questions, missing practical options or mobile usability is welcome here. Please use fictional information in public examples and keep customer or confidential details out of this discussion.
+
+This plans fields and follow-up. It does not build, send or store a working enquiry form.
+
+Maintained by [Basingstoke Web Design](https://basingstokewebdesign.uk/), operated by JW Digital Services Ltd. The original developer helpers are still available in the repository, but they are not needed to use the browser tool.
