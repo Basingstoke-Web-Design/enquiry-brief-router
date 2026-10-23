@@ -1,0 +1,22 @@
+{
+  "name": "enquiry-brief-router",
+  "version": "0.1.0",
+  "description": "Build a short service enquiry flow that asks relevant questions and prepares a reviewable email brief.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "check": "node --test && node scripts/build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Basingstoke-Web-Design/enquiry-brief-router.git"
+  },
+  "homepage": "https://basingstokewebdesign.uk/"
+}

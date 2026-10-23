@@ -1,0 +1,70 @@
+{
+  "title": "Prepare a relevant enquiry",
+  "summary": "Review or copy a brief locally. Nothing is sent, uploaded or stored.",
+  "business": "Example Sign Studio / fictional",
+  "routes": [
+    {
+      "id": "shop",
+      "label": "Shop sign",
+      "questions": [
+        {
+          "id": "location",
+          "label": "Where will the sign be installed?",
+          "required": true
+        },
+        {
+          "id": "message",
+          "label": "What should the sign say?",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "vehicle",
+      "label": "Vehicle lettering",
+      "questions": [
+        {
+          "id": "vehicles",
+          "label": "How many vehicles need lettering?",
+          "required": true
+        },
+        {
+          "id": "artwork",
+          "label": "Do you already have artwork?",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "update",
+      "label": "Update existing artwork",
+      "questions": [
+        {
+          "id": "changes",
+          "label": "What needs to change?",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "selectedService": "shop",
+  "questions": [
+    {
+      "id": "location",
+      "label": "Where will the sign be installed?",
+      "required": true
+    },
+    {
+      "id": "message",
+      "label": "What should the sign say?",
+      "required": true
+    }
+  ],
+  "answers": {
+    "location": "Above the shop entrance",
+    "message": "A clear name and opening information"
+  },
+  "issues": [],
+  "brief": "Enquiry for Example Sign Studio / fictional\nService: Shop sign\n\nWhere will the sign be installed?: Above the shop entrance\nWhat should the sign say?: A clear name and opening information",
+  "markdown": "Enquiry for Example Sign Studio / fictional\nService: Shop sign\n\nWhere will the sign be installed?: Above the shop entrance\nWhat should the sign say?: A clear name and opening information"
+}

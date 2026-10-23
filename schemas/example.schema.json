@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Enquiry Brief Router example structure",
+  "description": "Structural guide to the supplied example. Runtime validation enforces supported states, publication gates and cross-field rules.",
+  "type": "object",
+  "properties": {
+    "business": {
+      "type": "string"
+    },
+    "selectedService": {
+      "type": "string"
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "required": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "label",
+                "required"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "questions"
+        ]
+      }
+    },
+    "answers": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "vehicles": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "location",
+        "message",
+        "vehicles"
+      ]
+    }
+  },
+  "required": [
+    "business",
+    "selectedService",
+    "routes",
+    "answers"
+  ]
+}
